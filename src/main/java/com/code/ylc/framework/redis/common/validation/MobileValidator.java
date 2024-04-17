@@ -1,7 +1,7 @@
 package com.code.ylc.framework.redis.common.validation;
 
 import cn.hutool.core.util.StrUtil;
-import com.code.ylc.framework.common.util.validation.ValidationUtils;
+import com.code.ylc.framework.redis.common.util.validation.ValidationUtils;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

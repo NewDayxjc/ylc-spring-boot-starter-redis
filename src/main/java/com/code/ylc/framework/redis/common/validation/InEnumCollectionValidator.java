@@ -1,7 +1,7 @@
 package com.code.ylc.framework.redis.common.validation;
 
 import cn.hutool.core.collection.CollUtil;
-import com.code.ylc.framework.common.core.IntArrayValuable;
+import com.code.ylc.framework.redis.common.core.IntArrayValuable;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

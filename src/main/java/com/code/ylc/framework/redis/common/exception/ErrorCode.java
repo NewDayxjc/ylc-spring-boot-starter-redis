@@ -1,7 +1,8 @@
 package com.code.ylc.framework.redis.common.exception;
 
-import com.code.ylc.framework.common.exception.enums.GlobalErrorCodeConstants;
-import com.code.ylc.framework.common.exception.enums.ServiceErrorCodeRange;
+
+import com.code.ylc.framework.redis.common.exception.enums.GlobalErrorCodeConstants;
+import com.code.ylc.framework.redis.common.exception.enums.ServiceErrorCodeRange;
 import lombok.Data;
 
 /**

@@ -1,6 +1,6 @@
 package com.code.ylc.framework.redis.common.enums;
 
-import com.code.ylc.framework.common.core.IntArrayValuable;
+import com.code.ylc.framework.redis.common.core.IntArrayValuable;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

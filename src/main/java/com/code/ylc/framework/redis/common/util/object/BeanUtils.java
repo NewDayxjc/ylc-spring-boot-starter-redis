@@ -1,8 +1,9 @@
 package com.code.ylc.framework.redis.common.util.object;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.code.ylc.framework.common.pojo.PageResult;
-import com.code.ylc.framework.common.util.collection.CollectionUtils;
+import com.code.ylc.framework.redis.common.pojo.PageResult;
+import com.code.ylc.framework.redis.common.util.collection.CollectionUtils;
+
 
 import java.util.List;
 import java.util.function.Consumer;

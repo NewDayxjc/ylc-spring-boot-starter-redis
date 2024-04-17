@@ -17,10 +17,22 @@
     <revision>2.0.1-jdk8-snapshot</revision>
     <guava.version>33.0.0-jre</guava.version>
     <springdoc.version>1.6.15</springdoc.version>
+    <hutool.version>5.8.25</hutool.version>
+    <lombok.version>1.18.30</lombok.version>
+    <!-- 监控相关 -->
+    <skywalking.version>8.12.0</skywalking.version>
+    <transmittable-thread-local.version>2.14.5</transmittable-thread-local.version>
+
 
   </properties>
 
   <dependencies>
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>transmittable-thread-local</artifactId> <!-- 解决 ThreadLocal 父子线程的传值问题 -->
+      <version>${transmittable-thread-local.version}</version>
+    </dependency>
     <!-- Spring 核心 -->
     <dependency>
       <groupId>org.springframework</groupId>
@@ -33,6 +45,14 @@
       <artifactId>spring-expression</artifactId>
       <version>5.3.31</version>
 
+      <scope>provided</scope> <!-- 设置为 provided，只有工具类需要使用到 -->
+    </dependency>
+
+
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>4.0.4</version>
       <scope>provided</scope> <!-- 设置为 provided，只有工具类需要使用到 -->
     </dependency>
 
@@ -67,13 +87,21 @@
       <artifactId>guava</artifactId>
       <version>${guava.version}</version>
     </dependency>
-
     <dependency>
-      <groupId>com.ylc</groupId>
-      <artifactId>ylc-common</artifactId>
-      <version>${revision}</version>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
     </dependency>
-
+<!--    <dependency>-->
+<!--      <groupId>com.ylc</groupId>-->
+<!--      <artifactId>ylc-common</artifactId>-->
+<!--      <version>${revision}</version>-->
+<!--    </dependency>-->
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>${hutool.version}</version>
+    </dependency>
     <!-- DB 相关 -->
     <dependency>
       <groupId>org.redisson</groupId>
@@ -111,7 +139,11 @@
       <version>1.9.7</version>
       <scope>provided</scope> <!-- 设置为 provided，只有工具类需要使用到 -->
     </dependency>
-
+    <dependency>
+      <groupId>org.apache.skywalking</groupId>
+      <artifactId>apm-toolkit-trace</artifactId>
+      <version>${skywalking.version}</version>
+    </dependency>
 
 
   </dependencies>

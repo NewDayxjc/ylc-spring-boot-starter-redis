@@ -3,7 +3,7 @@ package com.code.ylc.framework.redis.common.util.servlet;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.servlet.ServletUtil;
-import com.code.ylc.framework.common.util.json.JsonUtils;
+import com.code.ylc.framework.redis.common.util.json.JsonUtils;
 import org.springframework.http.MediaType;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;

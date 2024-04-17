@@ -1,7 +1,7 @@
 package com.code.ylc.framework.redis.common.enums;
 
 import cn.hutool.core.util.ObjUtil;
-import com.code.ylc.framework.common.core.IntArrayValuable;
+import com.code.ylc.framework.redis.common.core.IntArrayValuable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

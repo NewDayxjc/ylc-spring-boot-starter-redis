@@ -1,6 +1,7 @@
 package com.code.ylc.framework.redis.common.exception.enums;
 
-import com.code.ylc.framework.common.exception.ErrorCode;
+
+import com.code.ylc.framework.redis.common.exception.ErrorCode;
 
 /**
  * 全局错误码枚举

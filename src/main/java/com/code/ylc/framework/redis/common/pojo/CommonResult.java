@@ -1,8 +1,9 @@
 package com.code.ylc.framework.redis.common.pojo;
 
-import com.code.ylc.framework.common.exception.ErrorCode;
-import com.code.ylc.framework.common.exception.ServiceException;
-import com.code.ylc.framework.common.exception.enums.GlobalErrorCodeConstants;
+
+import com.code.ylc.framework.redis.common.exception.ErrorCode;
+import com.code.ylc.framework.redis.common.exception.ServiceException;
+import com.code.ylc.framework.redis.common.exception.enums.GlobalErrorCodeConstants;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.springframework.util.Assert;

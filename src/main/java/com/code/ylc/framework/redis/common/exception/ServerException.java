@@ -1,6 +1,6 @@
 package com.code.ylc.framework.redis.common.exception;
 
-import com.code.ylc.framework.common.exception.enums.GlobalErrorCodeConstants;
+import com.code.ylc.framework.redis.common.exception.enums.GlobalErrorCodeConstants;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

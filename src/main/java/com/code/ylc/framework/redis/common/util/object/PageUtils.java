@@ -4,9 +4,10 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.func.Func1;
 import cn.hutool.core.lang.func.LambdaUtil;
 import cn.hutool.core.util.ArrayUtil;
-import com.code.ylc.framework.common.pojo.PageParam;
-import com.code.ylc.framework.common.pojo.SortablePageParam;
-import com.code.ylc.framework.common.pojo.SortingField;
+
+import com.code.ylc.framework.redis.common.pojo.PageParam;
+import com.code.ylc.framework.redis.common.pojo.SortablePageParam;
+import com.code.ylc.framework.redis.common.pojo.SortingField;
 import org.springframework.util.Assert;
 
 import static java.util.Collections.singletonList;

@@ -8,7 +8,8 @@ import java.util.Collection;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-import static com.code.ylc.framework.common.util.collection.CollectionUtils.convertList;
+import static com.code.ylc.framework.redis.common.util.collection.CollectionUtils.convertList;
+
 
 /**
  * Array 工具类

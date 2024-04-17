@@ -3,7 +3,7 @@ package com.code.ylc.framework.redis.common.util.collection;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.ObjUtil;
-import com.code.ylc.framework.common.core.KeyValue;
+import com.code.ylc.framework.redis.common.core.KeyValue;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Multimap;
 
