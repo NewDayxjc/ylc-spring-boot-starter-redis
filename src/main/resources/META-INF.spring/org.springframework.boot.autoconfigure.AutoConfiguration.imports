@@ -1,0 +1,2 @@
+com.code.ylc.framework.redis.config.YlcCacheAutoConfiguration
+com.code.ylc.framework.redis.config.YlcRedisAutoConfiguration

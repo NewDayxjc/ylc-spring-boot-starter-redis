@@ -1,0 +1,133 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ylc</groupId>
+  <artifactId>ylc-spring-boot-starter-redis</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>ylc-spring-boot-starter-redis</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <redisson.version>3.18.0</redisson.version> <!-- Spring Boot 2.X 最多使用 3.18.0 版本，否则会报 Tuple NoClassDefFoundError -->
+    <spring.version>2.7.18</spring.version>
+    <revision>2.0.1-jdk8-snapshot</revision>
+    <guava.version>33.0.0-jre</guava.version>
+    <springdoc.version>1.6.15</springdoc.version>
+
+  </properties>
+
+  <dependencies>
+    <!-- Spring 核心 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>5.3.31</version>
+      <scope>provided</scope> <!-- 设置为 provided，只有工具类需要使用到 -->
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-expression</artifactId>
+      <version>5.3.31</version>
+
+      <scope>provided</scope> <!-- 设置为 provided，只有工具类需要使用到 -->
+    </dependency>
+
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-ui</artifactId>
+      <version>${springdoc.version}</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-cache</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!-- Test 测试相关 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <version>${spring.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+      <version>2.15.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>${guava.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.ylc</groupId>
+      <artifactId>ylc-common</artifactId>
+      <version>${revision}</version>
+    </dependency>
+
+    <!-- DB 相关 -->
+    <dependency>
+      <groupId>org.redisson</groupId>
+      <artifactId>redisson-spring-boot-starter</artifactId>
+      <version>${redisson.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-actuator</artifactId>
+
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <scope>provided</scope> <!-- 设置为 provided，只有工具类需要使用到 -->
+      <version>5.3.31</version>
+    </dependency>
+
+    <!-- Web 相关 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>5.3.31</version>
+      <scope>provided</scope> <!-- 设置为 provided，只有工具类需要使用到 -->
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.9.7</version>
+      <scope>provided</scope> <!-- 设置为 provided，只有工具类需要使用到 -->
+    </dependency>
+
+
+
+  </dependencies>
+
+  <build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <configuration>
+        <source>8</source>
+        <target>8</target>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
+
+</project>
